@@ -1,0 +1,14 @@
+echo "N001 output"
+~/scripts/stop_nmon.sh
+echo "==========================================================="
+echo "N003 output"
+ssh baidu@n003 ~/scripts/stop_nmon.sh
+echo "==========================================================="
+echo "N004 output"
+ssh baidu@n004 ~/scripts/stop_nmon.sh
+echo "==========================================================="
+echo "N021 output"
+ssh baidu@n021 ~/scripts/stop_nmon.sh
+echo "==========================================================="
+
+

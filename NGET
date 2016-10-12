@@ -1,0 +1,36 @@
+#!/bin/bash
+
+export TMPNAME=nmon_dir.$$
+export NMON_TMPDIR=~/$TMPNAME
+
+mkdir -p $NMON_TMPDIR
+currpwd=`pwd`
+
+echo "N001 output"
+srcfile=`~/scripts/get_nmon.sh`
+cp $srcfile $NMON_TMPDIR/
+echo "==========================================================="
+echo "N003 output"
+srcfile=`ssh baidu@n003 ~/scripts/get_nmon.sh`
+scp baidu@n003:$srcfile $NMON_TMPDIR/
+echo "==========================================================="
+echo "N004 output"
+srcfile=`ssh baidu@n004 ~/scripts/get_nmon.sh`
+scp baidu@n004:$srcfile $NMON_TMPDIR/
+echo "==========================================================="
+echo "N021 output"
+srcfile=`ssh baidu@n021 ~/scripts/get_nmon.sh`
+scp baidu@n021:$srcfile $NMON_TMPDIR/
+echo "==========================================================="
+
+cd ~
+
+tar zcf $currpwd/$TMPNAME.tar.gz ./$TMPNAME
+
+cd $currpwd
+
+rm -rf $NMON_TMPDIR
+
+echo "Tar file found under : $TMPNAME.tar.gz "
+
+
