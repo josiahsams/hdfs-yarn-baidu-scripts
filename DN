@@ -1,9 +1,9 @@
-echo "N003 output"
-ssh baidu@n003 $1
+echo "sparksbw2 output"
+ssh baidu@sparksbw2 $1
 echo "==========================================================="
-echo "N004 output"
-ssh baidu@n004 $1
+echo "sparksbw3 output"
+ssh baidu@sparksbw3 $1
 echo "==========================================================="
-echo "N021 output"
-ssh baidu@n021 $1
+echo "sparksbw4 output"
+ssh baidu@sparksbw4 $1
 echo "==========================================================="

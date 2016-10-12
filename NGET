@@ -6,21 +6,21 @@ export NMON_TMPDIR=~/$TMPNAME
 mkdir -p $NMON_TMPDIR
 currpwd=`pwd`
 
-echo "N001 output"
+echo "sparksbw1 output"
 srcfile=`~/scripts/get_nmon.sh`
 cp $srcfile $NMON_TMPDIR/
 echo "==========================================================="
-echo "N003 output"
-srcfile=`ssh baidu@n003 ~/scripts/get_nmon.sh`
-scp baidu@n003:$srcfile $NMON_TMPDIR/
+echo "sparksbw2 output"
+srcfile=`ssh baidu@sparksbw2 ~/scripts/get_nmon.sh`
+scp baidu@sparksbw2:$srcfile $NMON_TMPDIR/
 echo "==========================================================="
-echo "N004 output"
-srcfile=`ssh baidu@n004 ~/scripts/get_nmon.sh`
-scp baidu@n004:$srcfile $NMON_TMPDIR/
+echo "sparksbw3 output"
+srcfile=`ssh baidu@sparksbw3 ~/scripts/get_nmon.sh`
+scp baidu@sparksbw3:$srcfile $NMON_TMPDIR/
 echo "==========================================================="
-echo "N021 output"
-srcfile=`ssh baidu@n021 ~/scripts/get_nmon.sh`
-scp baidu@n021:$srcfile $NMON_TMPDIR/
+echo "sparksbw4 output"
+srcfile=`ssh baidu@sparksbw4 ~/scripts/get_nmon.sh`
+scp baidu@sparksbw4:$srcfile $NMON_TMPDIR/
 echo "==========================================================="
 
 cd ~

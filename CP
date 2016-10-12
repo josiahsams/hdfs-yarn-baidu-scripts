@@ -1,9 +1,9 @@
-echo "N003 output"
-scp $1 baidu@n003:$2
+echo "sparksbw2 output"
+scp $1 baidu@sparksbw2:$2
 echo "==========================================================="
-echo "N004 output"
-scp $1 baidu@n004:$2
+echo "sparksbw3 output"
+scp $1 baidu@sparksbw3:$2
 echo "==========================================================="
-echo "N021 output"
-scp $1 baidu@n021:$2
+echo "sparksbw4 output"
+scp $1 baidu@sparksbw4:$2
 echo "==========================================================="

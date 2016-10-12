@@ -1,14 +1,14 @@
-echo "N001 output"
+echo "sparksbw1 output"
 ~/scripts/start_nmon.sh
 echo "==========================================================="
-echo "N003 output"
-ssh baidu@n003 ~/scripts/start_nmon.sh
+echo "sparksbw2 output"
+ssh baidu@sparksbw2 ~/scripts/start_nmon.sh
 echo "==========================================================="
-echo "N004 output"
-ssh baidu@n004 ~/scripts/start_nmon.sh
+echo "sparksbw3 output"
+ssh baidu@sparksbw3 ~/scripts/start_nmon.sh
 echo "==========================================================="
-echo "N021 output"
-ssh baidu@n021 ~/scripts/start_nmon.sh
+echo "sparksbw4 output"
+ssh baidu@sparksbw4 ~/scripts/start_nmon.sh
 echo "==========================================================="
 
 
