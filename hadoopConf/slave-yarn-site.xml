@@ -17,11 +17,11 @@
 <!-- Resource Manager properties -->
 	<property>
 		<name>yarn.resourcemanager.hostname</name>
-		<value>n001</value>
+		<value>sparksbw1lab</value>
 	</property>
 	<property>
 		<name>yarn.resourcemanager.webapp.address</name>
-		<value>n001:8088</value>
+		<value>sparksbw1lab:8088</value>
 	</property>
     <property>
         <name>yarn.scheduler.minimum-allocation-mb</name>

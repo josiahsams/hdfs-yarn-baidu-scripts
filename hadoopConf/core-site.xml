@@ -19,6 +19,6 @@
 <configuration>
   <property>
     <name>fs.defaultFS</name>
-    <value>hdfs://n001</value>
+    <value>hdfs://sparksbw1lab</value>
   </property>
 </configuration>

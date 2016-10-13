@@ -26,12 +26,12 @@
 
 <property>
 <name>dfs.namenode.name.dir</name>
-<value>file:/data/baidu/hdfsname</value>
+<value>file:/spark1/data/baidu/hdfsname,file:/spark2/data/baidu/hdfsname,file:/spark3/data/baidu/hdfsname</value>
 </property>
 
 <property>
 <name>dfs.datanode.data.dir</name>
-<value>file:/data/baidu/hdfsdata</value>
+<value>file:/spark1/data/baidu/hdfsdata,file:/spark2/data/baidu/hdfsdata,file:/spark3/data/baidu/hdfsdata</value>
 </property>
 
 </configuration>

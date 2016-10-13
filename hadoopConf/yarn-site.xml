@@ -17,7 +17,7 @@
 <!-- Resource Manager properties -->
 	<property>
 		<name>yarn.resourcemanager.hostname</name>
-		<value>n001</value>
+		<value>sparksbw1lab</value>
 	</property>
 	<property>
 		<name>yarn.resourcemanager.webapp.address</name>
