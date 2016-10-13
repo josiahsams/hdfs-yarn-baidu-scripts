@@ -1,0 +1,9 @@
+echo "sparksbw2 output"
+scp -r $1 baidu@sparksbw2:$2
+echo "==========================================================="
+echo "sparksbw3 output"
+scp -r $1 baidu@sparksbw3:$2
+echo "==========================================================="
+echo "sparksbw4 output"
+scp -r $1 baidu@sparksbw4:$2
+echo "==========================================================="

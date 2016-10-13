@@ -1,0 +1,9 @@
+sqlContext.sql(s"USE tpcds")
+
+import com.databricks.spark.sql.perf.tpcds.TPCDS
+val tpcds = new TPCDS ()
+
+tpcds.run(tpcds.tpcds1_4Queries.filter(_.name == s"queryName-v1.4"), 100)
+
+System.exit(0)
+
